@@ -1,0 +1,200 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="newrelic\License.txt" />
+    <None Remove="newrelic\NewRelic.Agent.Core.dll" />
+    <None Remove="newrelic\NewRelic.Agent.Core.pdb" />
+    <None Remove="newrelic\NewRelic.Agent.Extensions.dll" />
+    <None Remove="newrelic\NewRelic.Api.Agent.dll" />
+    <None Remove="newrelic\README.md" />
+    <None Remove="newrelic\libNewRelicProfiler.so" />
+    <None Remove="newrelic\newrelic.xsd" />
+    <None Remove="newrelic\run.sh" />
+    <None Remove="newrelic\setenv.sh" />
+    <None Remove="newrelic\newrelic.config" />
+    <None Remove="newrelic\extensions\NewRelic.Providers.Wrapper.AspNetCore.Instrumentation.xml" />
+    <None Remove="newrelic\extensions\NewRelic.Providers.Wrapper.CustomInstrumentation.Instrumentation.xml" />
+    <None Remove="newrelic\extensions\NewRelic.Providers.Wrapper.HttpClient.Instrumentation.xml" />
+    <None Remove="newrelic\extensions\NewRelic.Providers.Wrapper.Sql.Instrumentation.xml" />
+    <None Remove="newrelic\extensions\NewRelic.Providers.Wrapper.SqlAsync.Instrumentation.xml" />
+    <None Remove="newrelic\extensions\extension.xsd" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Agent.AttributeFilter.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Agent.Configuration.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Agent.Core.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Agent.LabelsService.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Core.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Parsing.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Storage.AsyncLocal.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.AspNetCore.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentation.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentationAsync.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.HttpClient.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.Sql.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.SqlAsync.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.WrapperUtilities.dll" />
+    <None Remove="newrelic\extensions\netstandard2.0\NewRelic.Trie.dll" />
+    <None Remove="manifest.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newrelic\License.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\NewRelic.Agent.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\NewRelic.Agent.Core.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\NewRelic.Agent.Extensions.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\NewRelic.Api.Agent.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\libNewRelicProfiler.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\newrelic.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\run.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\setenv.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\NewRelic.Providers.Wrapper.AspNetCore.Instrumentation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\NewRelic.Providers.Wrapper.CustomInstrumentation.Instrumentation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\NewRelic.Providers.Wrapper.HttpClient.Instrumentation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\NewRelic.Providers.Wrapper.Sql.Instrumentation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\NewRelic.Providers.Wrapper.SqlAsync.Instrumentation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\extension.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Agent.AttributeFilter.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Agent.Configuration.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Agent.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Agent.LabelsService.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Parsing.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Storage.AsyncLocal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.AspNetCore.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentation.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentationAsync.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.HttpClient.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.Sql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.SqlAsync.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.WrapperUtilities.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="newrelic\extensions\netstandard2.0\NewRelic.Trie.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="manifest.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="newrelic\newrelic.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Agent.AttributeFilter.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Agent.Configuration.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Agent.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Agent.LabelsService.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Parsing.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Storage.AsyncLocal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.AspNetCore.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentation.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.CustomInstrumentationAsync.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.HttpClient.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.Sql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.SqlAsync.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Providers.Wrapper.WrapperUtilities.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="newrelic\extensions\netstandard2.0\NewRelic.Trie.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
